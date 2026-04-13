@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- ===================== PAGE HERO ===================== -->
+      <section class="page-hero prices-hero" aria-label="Encabezado de precios">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-clip" aria-hidden="true"></div>
+        <div class="container page-hero-content">
+          <span class="section-tag reveal">Transparencia total</span>
+          <h1 class="page-hero-title reveal">Precios y paquetes</h1>
+          <p class="page-hero-sub reveal">
+            Sin sorpresas. Todo lo que incluye cada experiencia, claro y de
+            frente.
+          </p>
+        </div>
+      </section>
+      <!-- ===================== TABLA DE PRECIOS ===================== -->
+      <section class="prices-section" aria-labelledby="prices-title" id="tabla">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-tag">Comparador de destinos</span>
+            <h2 class="section-title" id="prices-title">
+              Tabla de precios 2026
+            </h2>
+            <p class="section-sub">
+              Precios por persona en pesos argentinos. Actualizados al
+              07/04/2026.
+            </p>
+          </header>
+
+          <!-- Tabla responsiva -->
+          <div
+            class="table-wrap reveal"
+            role="region"
+            aria-label="Tabla de precios de destinos"
+            tabindex="0"
+          >
+            <table class="prices-table" aria-describedby="prices-title">
+              <thead>
+                <tr>
+                  <th scope="col">Destino</th>
+                  <th scope="col">
+                    Escapada
+                    <span
+                      class="tooltip"
+                      data-tip="2 noches, traslado y desayuno incluidos"
+                      aria-label="2 noches, traslado y desayuno incluidos"
+                      >?</span
+                    >
+                  </th>
+                  <th scope="col">
+                    Semana
+                    <span
+                      class="tooltip"
+                      data-tip="7 noches, media pensión, guía y traslados"
+                      aria-label="7 noches, media pensión, guía y traslados"
+                      >?</span
+                    >
+                  </th>
+                  <th scope="col">
+                    Premium
+                    <span
+                      class="tooltip"
+                      data-tip="Todo incluido: vuelos, hotel 4★, actividades y guía privado"
+                      aria-label="Todo incluido: vuelos, hotel 4★, actividades y guía privado"
+                      >?</span
+                    >
+                  </th>
+                  <th scope="col">Duración</th>
+                  <th scope="col">Categoría</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row" tabindex="0">
+                  <td class="dest-name">
+                    <strong>Quebrada de Humahuaca</strong>
+                    <span class="dest-location">📍 Jujuy</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$85.000</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$210.000</span>
+                  </td>
+                  <td class="price-cell highlight-price">
+                    <span class="price price--premium">$380.000</span>
+                    <span
+                      class="tooltip"
+                      data-tip="¡Incluye vuelo desde Buenos Aires!"
+                      aria-label="Incluye vuelo desde Buenos Aires"
+                      >★</span
+                    >
+                  </td>
+                  <td>3–7 días</td>
+                  <td><span class="badge badge--cultural">Cultural</span></td>
+                </tr>
+
+                <tr class="table-row" tabindex="0">
+                  <td class="dest-name">
+                    <strong>Purmamarca y Cerro de los 7 Colores</strong>
+                    <span class="dest-location">📍 Jujuy</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$120.000</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$290.000</span>
+                  </td>
+                  <td class="price-cell highlight-price">
+                    <span class="price price--premium">$520.000</span>
+                    <span
+                      class="tooltip"
+                      data-tip="¡Incluye vuelo desde Buenos Aires!"
+                      aria-label="Incluye vuelo desde Buenos Aires"
+                      >★</span
+                    >
+                  </td>
+                  <td>4–8 días</td>
+                  <td>
+                    <span class="badge badge--naturaleza">Naturaleza</span>
+                  </td>
+                </tr>
+
+                <tr class="table-row" tabindex="0">
+                  <td class="dest-name">
+                    <strong>Tilcara y Pucará</strong>
+                    <span class="dest-location">📍 Jujuy</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$95.000</span>
+                  </td>
+                  <td class="price-cell">
+                    <span class="price">$230.000</span>
+                  </td>
+                  <td class="price-cell highlight-price">
+                    <span class="price price--premium">$410.000</span>
+                    <span
+                      class="tooltip"
+                      data-tip="¡Incluye lado brasileño y paseo en lancha!"
+                      aria-label="Incluye lado brasileño y paseo en lancha"
+                      >★</span
+                    >
+                  </td>
+                  <td>3–6 días</td>
+                  <td>
+                    <span class="badge badge--naturaleza">Naturaleza</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Nota al pie de la tabla -->
+          <p class="table-note reveal">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              width="14"
+              height="14"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            Precios orientativos por persona en base doble. Consultanos para
+            grupos, fechas especiales u opciones a medida.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
