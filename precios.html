@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Precios — Turismo en Jujuy</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="precios.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <header></header>
-    <main>
-      <!-- ===================== PAGE HERO ===================== -->
+
+    <main id="main-content">
       <section class="page-hero prices-hero" aria-label="Encabezado de precios">
         <div class="page-hero-bg" aria-hidden="true"></div>
         <div class="page-hero-clip" aria-hidden="true"></div>
@@ -17,12 +20,11 @@
           <span class="section-tag reveal">Transparencia total</span>
           <h1 class="page-hero-title reveal">Precios y paquetes</h1>
           <p class="page-hero-sub reveal">
-            Sin sorpresas. Todo lo que incluye cada experiencia, claro y de
-            frente.
+            Circuitos en Jujuy. Valores orientativos por persona.
           </p>
         </div>
       </section>
-      <!-- ===================== TABLA DE PRECIOS ===================== -->
+
       <section class="prices-section" aria-labelledby="prices-title" id="tabla">
         <div class="container">
           <header class="section-header reveal">
@@ -31,12 +33,10 @@
               Tabla de precios 2026
             </h2>
             <p class="section-sub">
-              Precios por persona en pesos argentinos. Actualizados al
-              07/04/2026.
+              Precios en pesos argentinos. Actualizados al 07/04/2026.
             </p>
           </header>
 
-          <!-- Tabla responsiva -->
           <div
             class="table-wrap reveal"
             role="region"
@@ -51,6 +51,7 @@
                     Escapada
                     <span
                       class="tooltip"
+                      tabindex="0"
                       data-tip="2 noches, traslado y desayuno incluidos"
                       aria-label="2 noches, traslado y desayuno incluidos"
                       >?</span
@@ -60,6 +61,7 @@
                     Semana
                     <span
                       class="tooltip"
+                      tabindex="0"
                       data-tip="7 noches, media pensión, guía y traslados"
                       aria-label="7 noches, media pensión, guía y traslados"
                       >?</span
@@ -69,8 +71,9 @@
                     Premium
                     <span
                       class="tooltip"
-                      data-tip="Todo incluido: vuelos, hotel 4★, actividades y guía privado"
-                      aria-label="Todo incluido: vuelos, hotel 4★, actividades y guía privado"
+                      tabindex="0"
+                      data-tip="Todo incluido: vuelos, hotel 4 estrellas, actividades y guía privado"
+                      aria-label="Todo incluido: vuelos, hotel 4 estrellas, actividades y guía privado"
                       >?</span
                     >
                   </th>
@@ -81,12 +84,10 @@
               <tbody>
                 <tr class="table-row" tabindex="0">
                   <td class="dest-name">
-                    <strong>Quebrada de Humahuaca</strong>
-                    <span class="dest-location">📍 Jujuy</span>
+                    <strong>Quebrada de Humahuaca</strong
+                    ><span class="dest-location">Jujuy</span>
                   </td>
-                  <td class="price-cell">
-                    <span class="price">$85.000</span>
-                  </td>
+                  <td class="price-cell"><span class="price">$85.000</span></td>
                   <td class="price-cell">
                     <span class="price">$210.000</span>
                   </td>
@@ -94,62 +95,57 @@
                     <span class="price price--premium">$380.000</span>
                     <span
                       class="tooltip"
-                      data-tip="¡Incluye vuelo desde Buenos Aires!"
+                      tabindex="0"
+                      data-tip="Incluye vuelo desde Buenos Aires"
                       aria-label="Incluye vuelo desde Buenos Aires"
-                      >★</span
+                      >*</span
                     >
                   </td>
-                  <td>3–7 días</td>
+                  <td>3-7 días</td>
                   <td><span class="badge badge--cultural">Cultural</span></td>
                 </tr>
-
                 <tr class="table-row" tabindex="0">
                   <td class="dest-name">
-                    <strong>Purmamarca y Cerro de los 7 Colores</strong>
-                    <span class="dest-location">📍 Jujuy</span>
+                    <strong>Purmamarca</strong
+                    ><span class="dest-location">Jujuy</span>
                   </td>
+                  <td class="price-cell"><span class="price">$82.000</span></td>
                   <td class="price-cell">
-                    <span class="price">$120.000</span>
-                  </td>
-                  <td class="price-cell">
-                    <span class="price">$290.000</span>
+                    <span class="price">$200.000</span>
                   </td>
                   <td class="price-cell highlight-price">
-                    <span class="price price--premium">$520.000</span>
+                    <span class="price price--premium">$365.000</span>
                     <span
                       class="tooltip"
-                      data-tip="¡Incluye vuelo desde Buenos Aires!"
-                      aria-label="Incluye vuelo desde Buenos Aires"
-                      >★</span
+                      tabindex="0"
+                      data-tip="Tour al Cerro de los Siete Colores"
+                      aria-label="Tour al Cerro de los Siete Colores"
+                      >*</span
                     >
                   </td>
-                  <td>4–8 días</td>
-                  <td>
-                    <span class="badge badge--naturaleza">Naturaleza</span>
-                  </td>
+                  <td>2-5 días</td>
+                  <td><span class="badge badge--cultural">Cultural</span></td>
                 </tr>
-
                 <tr class="table-row" tabindex="0">
                   <td class="dest-name">
-                    <strong>Tilcara y Pucará</strong>
-                    <span class="dest-location">📍 Jujuy</span>
+                    <strong>Salinas Grandes</strong
+                    ><span class="dest-location">Jujuy</span>
                   </td>
+                  <td class="price-cell"><span class="price">$92.000</span></td>
                   <td class="price-cell">
-                    <span class="price">$95.000</span>
-                  </td>
-                  <td class="price-cell">
-                    <span class="price">$230.000</span>
+                    <span class="price">$225.000</span>
                   </td>
                   <td class="price-cell highlight-price">
-                    <span class="price price--premium">$410.000</span>
+                    <span class="price price--premium">$400.000</span>
                     <span
                       class="tooltip"
-                      data-tip="¡Incluye lado brasileño y paseo en lancha!"
-                      aria-label="Incluye lado brasileño y paseo en lancha"
-                      >★</span
+                      tabindex="0"
+                      data-tip="Excursión 4x4 incluida"
+                      aria-label="Excursión 4x4 incluida"
+                      >*</span
                     >
                   </td>
-                  <td>3–6 días</td>
+                  <td>2-4 días</td>
                   <td>
                     <span class="badge badge--naturaleza">Naturaleza</span>
                   </td>
@@ -157,28 +153,98 @@
               </tbody>
             </table>
           </div>
-
-          <!-- Nota al pie de la tabla -->
           <p class="table-note reveal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              width="14"
-              height="14"
-              aria-hidden="true"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="12" />
-              <line x1="12" y1="16" x2="12.01" y2="16" />
-            </svg>
-            Precios orientativos por persona en base doble. Consultanos para
-            grupos, fechas especiales u opciones a medida.
+            Precios orientativos en base doble. Consultá por grupos y fechas.
           </p>
         </div>
       </section>
+
+      <section class="packages-section" aria-labelledby="packages-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-tag">Paquetes populares</span>
+            <h2 class="section-title" id="packages-title">Elegí tu ritmo</h2>
+            <p class="section-sub">Tres niveles para recorrer la provincia.</p>
+          </header>
+          <div class="packages-grid">
+            <article class="package-card reveal" tabindex="0">
+              <div class="package-header pkg-basic">
+                <span class="pkg-badge">Escapada</span>
+                <p class="pkg-price">Desde <strong>$68.000</strong></p>
+                <p class="pkg-desc">por persona</p>
+              </div>
+              <ul class="pkg-features" aria-label="Incluye paquete Escapada">
+                <li class="pkg-feat included">2 noches y desayuno</li>
+                <li class="pkg-feat not-included">Vuelos</li>
+              </ul>
+              <a
+                href="contacto.html"
+                class="btn btn-ghost pkg-btn"
+                aria-label="Consultar Escapada"
+                >Consultar</a
+              >
+            </article>
+            <article
+              class="package-card package-card--featured reveal"
+              tabindex="0"
+              aria-label="Paquete más popular"
+            >
+              <div class="pkg-popular-badge" aria-label="El más popular">
+                Más elegido
+              </div>
+              <div class="package-header pkg-week">
+                <span class="pkg-badge">Semana</span>
+                <p class="pkg-price">Desde <strong>$165.000</strong></p>
+                <p class="pkg-desc">por persona</p>
+              </div>
+              <ul class="pkg-features" aria-label="Incluye paquete Semana">
+                <li class="pkg-feat included">7 noches, media pensión</li>
+                <li class="pkg-feat included">Guía y traslados</li>
+              </ul>
+              <a
+                href="contacto.html"
+                class="btn btn-primary pkg-btn"
+                aria-label="Consultar Semana"
+                >Consultar</a
+              >
+            </article>
+            <article class="package-card reveal" tabindex="0">
+              <div class="package-header pkg-premium">
+                <span class="pkg-badge">Premium</span>
+                <p class="pkg-price">Desde <strong>$295.000</strong></p>
+                <p class="pkg-desc">por persona</p>
+              </div>
+              <ul class="pkg-features" aria-label="Incluye paquete Premium">
+                <li class="pkg-feat included">Vuelos y hotel 4 estrellas</li>
+                <li class="pkg-feat included">Guía privado</li>
+              </ul>
+              <a
+                href="contacto.html"
+                class="btn btn-ghost pkg-btn"
+                aria-label="Consultar Premium"
+                >Consultar</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices-cta reveal" aria-label="Llamada a la acción">
+        <div class="container prices-cta-inner">
+          <h2 class="prices-cta-title">¿Tenés algo en mente?</h2>
+          <p class="prices-cta-sub">Armamos el viaje a medida.</p>
+          <a
+            href="contacto.html"
+            class="btn btn-primary"
+            aria-label="Ir a contacto"
+            >Armar mi viaje</a
+          >
+        </div>
+      </section>
     </main>
+
     <footer></footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
