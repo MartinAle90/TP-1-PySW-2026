@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Contacto — Turismo en Jujuy</title>
+    <title>Agencias — Turismo en Jujuy</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -43,49 +43,63 @@
     </header>
 
     <main class="seccion contenedor">
-        <h1 class="titulo-seccion">Envianos tu consulta</h1>
-        <p style="text-align: center; margin-bottom: 2rem;">Validación en tiempo real aplicando selectores :valid e
-            :invalid de CSS.</p>
+        <h1 class="titulo-seccion">Agencias de Turismo Recomendadas</h1>
+        <p style="text-align: center; margin-bottom: 2rem;">Pasá el cursor sobre las tarjetas para ver los perfiles y
+            detalles de contacto de las agencias.</p>
 
-        <form id="formulario-contacto" class="formulario-contacto">
-            <div class="grupo-form">
-                <label for="nombre">Nombre completo *</label>
-                <input type="text" id="nombre" name="nombre" required minlength="3"
-                    placeholder="Ingresá al menos 3 caracteres">
+        <div class="grilla-agencias">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta-giratoria">
+                <div class="giratoria-interior">
+                    <div class="giratoria-frontal">
+                        <h3>Norte Extremo</h3>
+                        <p>Especialistas en Aventura</p>
+                        <div class="estrellas">★★★★★</div>
+                    </div>
+                    <div class="giratoria-trasera">
+                        <h4>Contacto</h4>
+                        <p>Tel: +54 9 388 123-4567</p>
+                        <p>Info@norteextremo.ar</p>
+                        <a href="contacto.html" class="boton" style="margin-top: 1rem;">Consultar</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="grupo-form">
-                <label for="email">Correo electrónico *</label>
-                <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-giratoria">
+                <div class="giratoria-interior">
+                    <div class="giratoria-frontal">
+                        <h3>Caminos Jujeños</h3>
+                        <p>Tours Culturales</p>
+                        <div class="estrellas">★★★★☆</div>
+                    </div>
+                    <div class="giratoria-trasera">
+                        <h4>Contacto</h4>
+                        <p>Tel: +54 9 388 987-6543</p>
+                        <p>contacto@caminosjujuy.ar</p>
+                        <a href="contacto.html" class="boton" style="margin-top: 1rem;">Consultar</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="grupo-form">
-                <label for="asunto">Destino de interés *</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="" disabled selected>Seleccioná una opción</option>
-                    <option value="Purmamarca">Purmamarca</option>
-                    <option value="Tilcara">Tilcara</option>
-                    <option value="Salinas Grandes">Salinas Grandes</option>
-                    <option value="Otro">Otro destino</option>
-                </select>
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta-giratoria">
+                <div class="giratoria-interior">
+                    <div class="giratoria-frontal">
+                        <h3>Alto Vuelo</h3>
+                        <p>Viajes VIP & Premium</p>
+                        <div class="estrellas">★★★★★</div>
+                    </div>
+                    <div class="giratoria-trasera">
+                        <h4>Contacto</h4>
+                        <p>Tel: +54 9 388 555-1234</p>
+                        <p>reservas@altovuelo.com</p>
+                        <a href="contacto.html" class="boton" style="margin-top: 1rem;">Consultar</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="grupo-form">
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"
-                    placeholder="Escribí tu consulta aquí..."></textarea>
-            </div>
-
-            <button type="submit" class="boton">
-                Enviar Mensaje <span class="spinner"></span>
-            </button>
-        </form>
-
-        <!-- Modal Confirmación -->
-        <div id="modal-exito" class="modal-exito">
-            <h2>¡Tu mensaje se envió con éxito!</h2>
-            <p>Nos contactaremos a la brevedad.</p>
         </div>
+
     </main>
 
     <!-- Footer -->
@@ -109,9 +123,6 @@
             <div class="pie-columna">
                 <h3>Ubicación</h3>
                 <p>San Salvador de Jujuy, Argentina</p>
-                <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3400%2C-24.2100%2C-65.2600%2C-24.1600"
-                    width="100%" height="150" style="border:0;" loading="lazy"></iframe>
             </div>
         </div>
         <div style="text-align: center; border-top: 1px solid var(--color-borde); padding-top: 1rem;">
