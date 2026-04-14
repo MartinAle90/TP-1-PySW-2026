@@ -5,8 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Precios — Turismo en Jujuy</title>
+    <title>Destinos — Turismo en Jujuy</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Filtros funcionales */
+        #filtro-todos:checked~.grilla-masonry .item-masonry,
+        #filtro-cultural:checked~.grilla-masonry .filtro-cultural,
+        #filtro-naturaleza:checked~.grilla-masonry .filtro-naturaleza {
+            display: block;
+        }
+
+        #filtro-cultural:checked~.grilla-masonry .item-masonry:not(.filtro-cultural),
+        #filtro-naturaleza:checked~.grilla-masonry .item-masonry:not(.filtro-naturaleza) {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +37,7 @@
             <nav>
                 <ul class="menu">
                     <li><a href="home.html">Inicio</a></li>
-                    <li>
-                        <a href="destinos.html">Destinos &#9662;</a>
-                        <ul class="submenu">
-                            <li><a href="destinos.html">Ver Todos</a></li>
-                            <li><a href="#">Quebrada</a></li>
-                            <li><a href="#">Yungas</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="destinos.html">Destinos</a></li>
                     <li><a href="agencias.html">Agencias</a></li>
                     <li><a href="precios.html">Precios</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -43,47 +49,51 @@
     </header>
 
     <main class="seccion contenedor">
-        <h1 class="titulo-seccion">Nuestros Precios</h1>
-        <p style="text-align: center; margin-bottom: 2rem;">Comparador interactivo de destinos y paquetes. Valores
-            orientativos por persona.</p>
+        <h1 class="titulo-seccion">Galería de Destinos</h1>
 
-        <div class="tabla-contenedor">
-            <table class="tabla-precios">
-                <thead>
-                    <tr>
-                        <th>Destino</th>
-                        <th>Escapada (2 Noches)<span class="tooltip" data-texto="Alojamiento y desayuno">?</span></th>
-                        <th>Semana (7 Noches)<span class="tooltip" data-texto="Media pensión + traslados">?</span></th>
-                        <th>Cat.</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Quebrada de Humahuaca</strong></td>
-                        <td>$85.000</td>
-                        <td>$210.000</td>
-                        <td>Cultural</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Purmamarca</strong></td>
-                        <td>$82.000</td>
-                        <td>$200.000</td>
-                        <td>Cultural</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Salinas Grandes</strong></td>
-                        <td>$92.000</td>
-                        <td>$225.000</td>
-                        <td>Naturaleza</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Yungas</strong></td>
-                        <td>$75.000</td>
-                        <td>$185.000</td>
-                        <td>Aventura</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Input Radios ocultos para el filtro CSS-Only -->
+        <input type="radio" id="filtro-todos" name="categoria" class="menu-toggle" checked>
+        <input type="radio" id="filtro-cultural" name="categoria" class="menu-toggle">
+        <input type="radio" id="filtro-naturaleza" name="categoria" class="menu-toggle">
+
+        <div class="filtros-css">
+            <label for="filtro-todos">Ver Todos</label>
+            <label for="filtro-cultural">Culturales</label>
+            <label for="filtro-naturaleza">Naturaleza</label>
+        </div>
+
+        <div class="grilla-masonry">
+            <div class="item-masonry filtro-cultural">
+                <img src="assets/purmamarca.jpg" alt="Purmamarca">
+                <div class="overlay-masonry">
+                    <h3>Purmamarca</h3>
+                    <p>Cerro de los 7 Colores</p>
+                </div>
+            </div>
+
+            <div class="item-masonry filtro-naturaleza">
+                <img src="assets/salinas.jpg" alt="Salinas">
+                <div class="overlay-masonry">
+                    <h3>Salinas Grandes</h3>
+                    <p>Inmensidad blanca</p>
+                </div>
+            </div>
+
+            <div class="item-masonry filtro-cultural">
+                <img src="assets/tilcara.jpg" alt="Tilcara">
+                <div class="overlay-masonry">
+                    <h3>Tilcara</h3>
+                    <p>Cultura Viva</p>
+                </div>
+            </div>
+
+            <div class="item-masonry filtro-naturaleza">
+                <img src="assets/purmamarca.jpg" alt="Calilegua">
+                <div class="overlay-masonry">
+                    <h3>Parque Nacional</h3>
+                    <p>Selva de las Yungas</p>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -109,9 +119,6 @@
             <div class="pie-columna">
                 <h3>Ubicación</h3>
                 <p>San Salvador de Jujuy, Argentina</p>
-                <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3400%2C-24.2100%2C-65.2600%2C-24.1600"
-                    width="100%" height="150" style="border:0;" loading="lazy"></iframe>
             </div>
         </div>
         <div style="text-align: center; border-top: 1px solid var(--color-borde); padding-top: 1rem;">
