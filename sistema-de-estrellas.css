@@ -1,0 +1,23 @@
+.rating {
+  direction: rtl;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
