@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Precios — Turismo en Jujuy</title>
+    <title>Tarjeta — Turismo en Jujuy</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="tarjeta_remoto.css" />
+    <link rel="stylesheet" href="sistema-de-estrellas.css" />
   </head>
-
   <body>
     <header class="encabezado">
       <div class="contenedor navegacion">
         <a href="home.html" class="logo">
+          <!-- SVG Icono montaña simple -->
           <svg
             width="24"
             height="24"
@@ -52,66 +54,42 @@
         </button>
       </div>
     </header>
+    <main>
+      <section class="agencias">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Agencia Viajar+</h3>
+              <p>Especialistas en turismo internacional</p>
+            </div>
 
-    <main class="seccion contenedor">
-      <h1 class="titulo-seccion">Nuestros Precios</h1>
-      <p style="text-align: center; margin-bottom: 2rem">
-        Comparador interactivo de destinos y paquetes. Valores orientativos por
-        persona.
-      </p>
+            <div class="card-back">
+              <h3>Detalles</h3>
+              <p>Ofertas exclusivas y paquetes completos</p>
 
-      <div class="tabla-contenedor scroll-snap-container">
-        <table class="tabla-precios">
-          <thead>
-            <tr>
-              <th>Destino</th>
-              <th>
-                Escapada (2 Noches)<span
-                  class="tooltip"
-                  data-texto="Alojamiento y desayuno"
-                  >?</span
+              <!-- Rating -->
+              <div class="rating">
+                <input type="radio" name="star1" id="star5" /><label for="star5"
+                  >★</label
                 >
-              </th>
-              <th>
-                Semana (7 Noches)<span
-                  class="tooltip"
-                  data-texto="Media pensión + traslados"
-                  >?</span
+                <input type="radio" name="star1" id="star4" /><label for="star4"
+                  >★</label
                 >
-              </th>
-              <th>Cat.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Quebrada de Humahuaca</strong></td>
-              <td>$85.000</td>
-              <td>$210.000</td>
-              <td>Cultural</td>
-            </tr>
-            <tr>
-              <td><strong>Purmamarca</strong></td>
-              <td>$82.000</td>
-              <td>$200.000</td>
-              <td>Cultural</td>
-            </tr>
-            <tr>
-              <td><strong>Salinas Grandes</strong></td>
-              <td>$92.000</td>
-              <td>$225.000</td>
-              <td>Naturaleza</td>
-            </tr>
-            <tr>
-              <td><strong>Yungas</strong></td>
-              <td>$75.000</td>
-              <td>$185.000</td>
-              <td>Aventura</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                <input type="radio" name="star1" id="star3" /><label for="star3"
+                  >★</label
+                >
+                <input type="radio" name="star1" id="star2" /><label for="star2"
+                  >★</label
+                >
+                <input type="radio" name="star1" id="star1" /><label for="star1"
+                  >★</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <!-- Footer -->
     <footer class="pie-pagina">
       <div class="contenedor pie-columnas">
@@ -128,6 +106,7 @@
           <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
           </ul>
         </div>
         <div class="pie-columna">

@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Precios — Turismo en Jujuy</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
+    <title>Agencias — Turismo en Jujuy</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="agencia.css">
+</head>
+
+<body>
 
   <body>
     <header class="encabezado">
@@ -54,61 +57,69 @@
     </header>
 
     <main class="seccion contenedor">
-      <h1 class="titulo-seccion">Nuestros Precios</h1>
+      <h1 class="titulo-seccion">Agencias de Turismo Recomendadas</h1>
       <p style="text-align: center; margin-bottom: 2rem">
-        Comparador interactivo de destinos y paquetes. Valores orientativos por
-        persona.
+        Pasá el cursor sobre las tarjetas para ver los perfiles y detalles de
+        contacto de las agencias.
       </p>
 
-      <div class="tabla-contenedor scroll-snap-container">
-        <table class="tabla-precios">
-          <thead>
-            <tr>
-              <th>Destino</th>
-              <th>
-                Escapada (2 Noches)<span
-                  class="tooltip"
-                  data-texto="Alojamiento y desayuno"
-                  >?</span
-                >
-              </th>
-              <th>
-                Semana (7 Noches)<span
-                  class="tooltip"
-                  data-texto="Media pensión + traslados"
-                  >?</span
-                >
-              </th>
-              <th>Cat.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Quebrada de Humahuaca</strong></td>
-              <td>$85.000</td>
-              <td>$210.000</td>
-              <td>Cultural</td>
-            </tr>
-            <tr>
-              <td><strong>Purmamarca</strong></td>
-              <td>$82.000</td>
-              <td>$200.000</td>
-              <td>Cultural</td>
-            </tr>
-            <tr>
-              <td><strong>Salinas Grandes</strong></td>
-              <td>$92.000</td>
-              <td>$225.000</td>
-              <td>Naturaleza</td>
-            </tr>
-            <tr>
-              <td><strong>Yungas</strong></td>
-              <td>$75.000</td>
-              <td>$185.000</td>
-              <td>Aventura</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="grilla-agencias">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta-giratoria">
+          <div class="giratoria-interior">
+            <div class="giratoria-frontal">
+              <h3>Norte Extremo</h3>
+              <p>Especialistas en Aventura</p>
+              <div class="estrellas">★★★★★</div>
+            </div>
+            <div class="giratoria-trasera">
+              <h4>Contacto</h4>
+              <p>Tel: +54 9 388 123-4567</p>
+              <p>Info@norteextremo.ar</p>
+              <a href="contacto.html" class="boton" style="margin-top: 1rem"
+                >Consultar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta-giratoria">
+          <div class="giratoria-interior">
+            <div class="giratoria-frontal">
+              <h3>Caminos Jujeños</h3>
+              <p>Tours Culturales</p>
+              <div class="estrellas">★★★★☆</div>
+            </div>
+            <div class="giratoria-trasera">
+              <h4>Contacto</h4>
+              <p>Tel: +54 9 388 987-6543</p>
+              <p>contacto@caminosjujuy.ar</p>
+              <a href="contacto.html" class="boton" style="margin-top: 1rem"
+                >Consultar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta-giratoria">
+          <div class="giratoria-interior">
+            <div class="giratoria-frontal">
+              <h3>Alto Vuelo</h3>
+              <p>Viajes VIP & Premium</p>
+              <div class="estrellas">★★★★★</div>
+            </div>
+            <div class="giratoria-trasera">
+              <h4>Contacto</h4>
+              <p>Tel: +54 9 388 555-1234</p>
+              <p>reservas@altovuelo.com</p>
+              <a href="contacto.html" class="boton" style="margin-top: 1rem"
+                >Consultar</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -128,6 +139,7 @@
           <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
           </ul>
         </div>
         <div class="pie-columna">
