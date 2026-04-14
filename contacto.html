@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto — Turismo en Jujuy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header></header>
+
+    <main id="main-content">
+      <section
+        class="page-hero contact-hero"
+        aria-label="Encabezado de contacto"
+      >
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-clip" aria-hidden="true"></div>
+        <div class="container page-hero-content">
+          <span class="section-tag reveal">Estamos para ayudarte</span>
+          <h1 class="page-hero-title reveal">Contacto</h1>
+          <p class="page-hero-sub reveal">
+            Contanos qué soñás y lo hacemos realidad.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-form-title">
+        <div class="container contact-layout">
+          <aside
+            class="contact-info reveal"
+            aria-label="Información de contacto"
+          >
+            <h2 class="contact-info-title" id="contact-info-heading">
+              Encontranos
+            </h2>
+            <ul class="contact-details" aria-label="Datos de contacto">
+              <li class="contact-detail-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    class="svg-draw"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                  />
+                  <circle class="svg-draw" cx="12" cy="9" r="2.5" />
+                </svg>
+                <div>
+                  <span class="detail-label">Dirección</span>
+                  <span class="detail-value"
+                    >Av. Gorriti 456, San Salvador de Jujuy</span
+                  >
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    class="svg-draw"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.27 19a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <div>
+                  <span class="detail-label">Teléfono</span>
+                  <a href="tel:+5438814000000" class="detail-value detail-link"
+                    >+54 388 400-0000</a
+                  >
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    class="svg-draw"
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline class="svg-draw" points="22,6 12,13 2,6" />
+                </svg>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <a
+                    href="mailto:consultas@destinojujuy.ar"
+                    class="detail-value detail-link"
+                    >consultas@destinojujuy.ar</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="contact-form-wrap reveal">
+            <h2 class="contact-form-heading" id="contact-form-title">
+              Envianos tu consulta
+            </h2>
+            <p class="contact-form-sub">
+              Completá el formulario y te respondemos en menos de 24 horas.
+            </p>
+
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="#"
+              method="post"
+              novalidate
+              aria-label="Formulario de contacto"
+              aria-describedby="form-status"
+            >
+              <div class="field-group">
+                <label for="nombre" class="field-label"
+                  >Nombre completo
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="field-input"
+                  placeholder="Ej: Ana García"
+                  required
+                  minlength="2"
+                  aria-required="true"
+                  aria-describedby="nombre-error"
+                  autocomplete="name"
+                />
+                <span
+                  class="field-error"
+                  id="nombre-error"
+                  role="alert"
+                  aria-live="polite"
+                  >Ingresá tu nombre completo (mínimo 2 caracteres).</span
+                >
+                <span class="field-success" aria-hidden="true">Listo</span>
+              </div>
+              <div class="field-group">
+                <label for="email" class="field-label"
+                  >Correo electrónico
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="field-input"
+                  placeholder="tu@correo.com"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error"
+                  autocomplete="email"
+                />
+                <span
+                  class="field-error"
+                  id="email-error"
+                  role="alert"
+                  aria-live="polite"
+                  >Ingresá un correo electrónico válido.</span
+                >
+                <span class="field-success" aria-hidden="true">Listo</span>
+              </div>
+              <div class="field-group">
+                <label for="telefono" class="field-label"
+                  >Teléfono <span class="optional">(opcional)</span></label
+                >
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="field-input"
+                  placeholder="+54 9 388 000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="field-group">
+                <label for="destino" class="field-label"
+                  >Destino de interés
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <div class="select-wrap">
+                  <select
+                    id="destino"
+                    name="destino"
+                    class="field-input field-select"
+                    required
+                    aria-required="true"
+                    aria-describedby="destino-error"
+                  >
+                    <option value="" disabled selected>
+                      Seleccioná un destino
+                    </option>
+                    <optgroup label="Jujuy">
+                      <option value="quebrada">Quebrada de Humahuaca</option>
+                      <option value="purmamarca">Purmamarca</option>
+                      <option value="tilcara">Tilcara</option>
+                      <option value="salinas">Salinas Grandes</option>
+                      <option value="yungas">Yungas / Calilegua</option>
+                      <option value="capital">San Salvador de Jujuy</option>
+                    </optgroup>
+                    <option value="otro">Otro / Consulta general</option>
+                  </select>
+                  <svg
+                    class="select-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                    width="16"
+                    height="16"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+                <span
+                  class="field-error"
+                  id="destino-error"
+                  role="alert"
+                  aria-live="polite"
+                  >Seleccioná un destino o motivo de consulta.</span
+                >
+                <span class="field-success" aria-hidden="true">Listo</span>
+              </div>
+              <div class="field-group">
+                <label for="personas" class="field-label"
+                  >Cantidad de personas
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="number"
+                  id="personas"
+                  name="personas"
+                  class="field-input"
+                  placeholder="Ej: 2"
+                  min="1"
+                  max="50"
+                  required
+                  aria-required="true"
+                  aria-describedby="personas-error"
+                />
+                <span
+                  class="field-error"
+                  id="personas-error"
+                  role="alert"
+                  aria-live="polite"
+                  >Ingresá un número entre 1 y 50.</span
+                >
+                <span class="field-success" aria-hidden="true">Listo</span>
+              </div>
+              <div class="field-group field-group--full">
+                <label for="mensaje" class="field-label"
+                  >Mensaje
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  class="field-input field-textarea"
+                  rows="5"
+                  required
+                  minlength="20"
+                  aria-required="true"
+                  aria-describedby="mensaje-error"
+                  placeholder="Fechas, intereses, presupuesto…"
+                ></textarea>
+                <span
+                  class="field-error"
+                  id="mensaje-error"
+                  role="alert"
+                  aria-live="polite"
+                  >El mensaje debe tener al menos 20 caracteres.</span
+                >
+                <span class="field-success" aria-hidden="true">Listo</span>
+                <span class="char-count" id="charCount" aria-live="polite"
+                  >0 / 20 mínimo</span
+                >
+              </div>
+              <p
+                id="form-status"
+                class="sr-only"
+                aria-live="polite"
+                aria-atomic="true"
+              ></p>
+              <div class="field-group field-group--full form-actions">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-submit"
+                  aria-label="Enviar consulta"
+                >
+                  <span class="btn-text">Enviar consulta</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+                <p class="form-note">
+                  Tu información es privada y no será compartida.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal-overlay"
+      id="confirmModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+      hidden
+    >
+      <div class="modal">
+        <div class="modal-icon" aria-hidden="true">
+          <svg viewBox="0 0 52 52" fill="none" width="64" height="64">
+            <circle
+              class="modal-circle"
+              cx="26"
+              cy="26"
+              r="25"
+              stroke="var(--clr-accent)"
+              stroke-width="2"
+            />
+            <path
+              class="modal-check"
+              d="M14 27l8 8 16-18"
+              stroke="var(--clr-accent)"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h2 class="modal-title" id="modal-title">¡Mensaje enviado!</h2>
+        <p class="modal-desc" id="modal-desc">
+          Recibimos tu consulta. Te contactaremos a
+          <strong id="modal-email"></strong> en menos de 24 horas.
+        </p>
+        <button
+          type="button"
+          class="btn btn-primary modal-close"
+          id="modalClose"
+          aria-label="Cerrar confirmación"
+        >
+          Cerrar
+        </button>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="main.js"></script>
+    <script src="contacto.js"></script>
+  </body>
+</html>
