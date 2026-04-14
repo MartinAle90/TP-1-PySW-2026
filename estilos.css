@@ -348,6 +348,42 @@ video {
   opacity: 1;
 }
 
+/* --- CONTADOR ANIMADO (Keyframes Avanzados) --- */
+.contador-seccion {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+/* Le enseñamos a CSS que esta variable es un número, no solo texto */
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+.contador-numero {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #d1bfae;
+    /* Animación de 3 segundos que frena al final (forwards) */
+    animation: contar 3s ease-out forwards;
+    /* Usamos el valor de --num como un contador de CSS */
+    counter-reset: visitantes var(--num);
+}
+
+/* Inyectamos el valor del contador y le agregamos un "+" al final */
+.contador-numero::after {
+    content: "+ " counter(visitantes) ;
+}
+
+@keyframes contar {
+    from { --num: 0; }
+    to { --num: 500; }
+}
+
 /* Página: Agencias */
 .grilla-agencias {
   display: grid;
