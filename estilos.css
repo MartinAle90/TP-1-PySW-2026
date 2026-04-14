@@ -10,7 +10,7 @@
   --color-oro: #c9a227;
 
   /* Tipografía y medidas */
-  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fuente-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --espaciado-chico: 0.5rem;
   --espaciado-medio: 1rem;
   --espaciado-grande: 2rem;
@@ -43,7 +43,9 @@ body {
   color: var(--color-texto);
   line-height: 1.6;
   scroll-behavior: smooth;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 li {
@@ -82,7 +84,9 @@ video {
   border-radius: var(--radio-borde);
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
 }
 
 .boton:hover {
@@ -350,38 +354,42 @@ video {
 
 /* --- CONTADOR ANIMADO (Keyframes Avanzados) --- */
 .contador-seccion {
-    background-color: var(--color-secundario);
-    color: var(--color-fondo);
-    text-align: center;
-    padding: 4rem 2rem;
-    margin: 3rem 0;
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 3rem 0;
 }
 
 /* Le enseñamos a CSS que esta variable es un número, no solo texto */
 @property --num {
-    syntax: '<integer>';
-    initial-value: 0;
-    inherits: false;
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
 }
 
 .contador-numero {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #d1bfae;
-    /* Animación de 3 segundos que frena al final (forwards) */
-    animation: contar 3s ease-out forwards;
-    /* Usamos el valor de --num como un contador de CSS */
-    counter-reset: visitantes var(--num);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #d1bfae;
+  /* Animación de 3 segundos que frena al final (forwards) */
+  animation: contar 3s ease-out forwards;
+  /* Usamos el valor de --num como un contador de CSS */
+  counter-reset: visitantes var(--num);
 }
 
 /* Inyectamos el valor del contador y le agregamos un "+" al final */
 .contador-numero::after {
-    content: "+ " counter(visitantes) ;
+  content: "+ " counter(visitantes);
 }
 
 @keyframes contar {
-    from { --num: 0; }
-    to { --num: 500; }
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 500;
+  }
 }
 
 /* Página: Agencias */
@@ -692,7 +700,7 @@ video {
     display: block;
   }
 
-  .menu-toggle:checked~nav .menu {
+  .menu-toggle:checked ~ nav .menu {
     display: flex;
   }
 
@@ -705,4 +713,90 @@ video {
   .seccion-blog {
     grid-template-columns: 1fr;
   }
+}
+
+/* Validación persistente - se muestra aunque no tenga foco */
+.grupo-form input:invalid,
+.grupo-form select:invalid,
+.grupo-form textarea:invalid {
+  border-color: #e74c3c;
+  background-color: #fdf2f2;
+}
+
+.grupo-form input:valid,
+.grupo-form select:valid,
+.grupo-form textarea:valid {
+  border-color: #27ae60;
+  background-color: #f0fdf4;
+}
+
+/* Mejor experiencia: solo mostramos el estado inválido DESPUÉS de que el usuario interactúe */
+.grupo-form input:user-invalid,
+.grupo-form select:user-invalid,
+.grupo-form textarea:user-invalid {
+  border-color: #e74c3c;
+}
+
+/* Opcional: mensaje de error bonito con pseudo-elemento */
+.grupo-form input:invalid + label::after,
+.grupo-form input:user-invalid + label::after {
+  content: " (campo obligatorio o inválido)";
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-left: 8px;
+}
+
+/* Clip-path creativo para la tabla de precios */
+.tabla-contenedor {
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 2% 100%);
+  /* Forma ligeramente inclinada - da sensación de "viaje" */
+  transition: clip-path 0.4s ease;
+}
+
+.tabla-contenedor:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  /* Vuelve a forma normal al hacer hover */
+}
+
+.scroll-snap-container {
+  scroll-snap-type: y proximity; /* o "mandatory" si querés más estricto */
+  overflow-y: auto;
+  max-height: 420px; /* altura controlada para que se active el scroll */
+}
+
+.tabla-precios tr {
+  scroll-snap-align: start;
+}
+
+/* Micro-interacción en inputs y selects */
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grupo-form input:focus,
+.grupo-form select:focus,
+.grupo-form textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(184, 77, 24, 0.15);
+}
+
+/* Micro-interacción en botón de enviar */
+.boton {
+  position: relative;
+  overflow: hidden;
+}
+
+.boton:active {
+  transform: scale(0.95);
+}
+
+.logo svg {
+  transition: transform 0.4s ease;
+}
+
+.logo:hover svg {
+  transform: rotate(-12deg) scale(1.15);
+  stroke: var(--color-resalte);
 }
